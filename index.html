@@ -1,0 +1,176 @@
+<form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset id="fs-frm-inputs">
+    
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.xxx" required="">
+      
+      
+<label for="phone-number">Phone Number</label>
+    <input type="phone-number" name="call" id="phone-number" placeholder="###.###.####" required="">
+      
+            <label for="delivery-pickup">What is your preffered method of communication?</label>
+      <select name="delivery-pickup" id="delivery-pickup" required="">
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="1">Email</option>
+        <option value="2">Phone Number / Texting</option>
+      </select>
+      
+    <fieldset id="fs-frm-selects">
+      
+      <label for="delivery-pickup">1. Are you looking for delivery or pickup?</label>
+      <select name="delivery-pickup" id="delivery-pickup" required="">
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="1">Delivery</option>
+        <option value="2">Pickup</option>
+      </select>
+      
+      
+      <label for="order-type">2. Are you selecting a package order or singular selections of products?.</label>
+      <select name="order-type" id="order-type" required="">
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="1"> Starter Package - $20 </option>
+        <option value="2"> Bread Lover's Package - $ 25 </option>
+        <option value="3"> Family and Gifting Package - $30 </option>
+        <option value="4"> Sigular Items </option>
+      </select>
+    </fieldset>
+    
+     <label for="message">Order Contents</label>
+    <textarea rows="5" name="order-details" id="order-details" placeholder="Please type all items requested with quantity!" required=""></textarea>
+      
+        <label for="delivery-date">Delivery or Pickup Date Requested</label>
+    <input type="date" name="date-requested" id="date-requested" required="" placeholder="">
+      
+              <label for="delivery-date">Delivery or Pickup Time Requested</label>
+    <input type="time" name="time-requested" id="time-requested" required="" placeholder="">
+      
+           <label for="delivery-address">Delivery Address or Location (If Applicable)</label>
+    <input type="address" name="address" id="deliver-address" placeholder="1234 Bearcat Drive, Cincinnati, OH">
+      
+       <label for="message">Order Comments (If Applicable)</label>
+    <textarea rows="3" name="order-comments" id="order-comments" placeholder="Please type any dietary restrictions, allergies, or personal requests here! You can also request any items that are not on the menu here for pricing."></textarea>
+      
+
+     
+      After receiving your order, someone will reach out within 24 hours to communicate about total price, payment method, and overall order coordination. Thank you for ordering from Cottage Goods!
+
+ 
+   
+    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+  </fieldset>
+  <input type="submit" value="Send Order">
+    
+
+    
+    
+</form><style>/* reset */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+</style>
