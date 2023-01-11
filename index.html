@@ -1,6 +1,9 @@
 <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mknanreo" method="post">
   <fieldset id="fs-frm-inputs">
     
+    Hello and welcome to the order form for Cottage Goods! 
+    We apologize for the look and feel of the order form, but this will be continuously updated for better shopping experiences.
+    
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
       
@@ -11,11 +14,11 @@
 <label for="phone-number">Phone Number</label>
     <input type="phone-number" name="call" id="phone-number" placeholder="###.###.####" required="">
       
-            <label for="delivery-pickup">What is your preffered method of communication?</label>
-      <select name="delivery-pickup" id="delivery-pickup" required="">
+            <label for="communication_method">What is your preffered method of communication?</label>
+      <select name="communication_method" id="communication_method" required="">
         <option value="" selected="" disabled="">Choose</option>
-        <option value="1">Email</option>
-        <option value="2">Phone Number / Texting</option>
+        <option value="Email">Email</option>
+        <option value="Phone_Number">Phone Number / Texting</option>
       </select>
       
     <fieldset id="fs-frm-selects">
@@ -23,18 +26,18 @@
       <label for="delivery-pickup">1. Are you looking for delivery or pickup?</label>
       <select name="delivery-pickup" id="delivery-pickup" required="">
         <option value="" selected="" disabled="">Choose</option>
-        <option value="1">Delivery</option>
-        <option value="2">Pickup</option>
+        <option value="Delivery">Delivery</option>
+        <option value="Pickup">Pickup</option>
       </select>
       
       
       <label for="order-type">2. Are you selecting a package order or singular selections of products?.</label>
       <select name="order-type" id="order-type" required="">
         <option value="" selected="" disabled="">Choose</option>
-        <option value="1"> Starter Package - $20 </option>
-        <option value="2"> Bread Lover's Package - $ 25 </option>
-        <option value="3"> Family and Gifting Package - $30 </option>
-        <option value="4"> Sigular Items </option>
+        <option value="Starter_Package"> Starter Package </option>
+        <option value="Bread_Lover"> Bread Lover's Package </option>
+        <option value="Family_Gift"> Family and Gifting Package </option>
+        <option value="Item_Order"> Sigular Items </option>
       </select>
     </fieldset>
     
